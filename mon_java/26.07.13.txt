@@ -1,0 +1,134 @@
+앱 종류(java기준)
+Eclipse
+IntelliJ
+VSCode
+
+------------------------------------------------------------
+class MyClass01{
+	//메서드(method) == 함수
+	public static void main(String[] args){
+		System.out.println(HEllo,jaca!");
+	} // main
+} // class
+
+Camel 표기법
+class Color { } 한 단어로는 지정하지 않음 (하나의 단어로는 클래스를 설정하지 않는다)
+
+name
+irum (일본은 일본어를 기준으로 작성함...영어 사용하지 않음
+
+firstData (첫글자는 무조건 대문자로)
+
+first_data (언더바 이용해서 이름작성)
+
+MyClass (복합명사일때는 두번째 단어는 대문자로 앞에 대문자여야함)
+
+sum(A1:A10) // A1부터 A10 행까지의 합계구하는 함수
+A1,A10과 괄호안에 있는 것은 "인수"라고 함
+
+public: 자원을 사용할 범위 지정
+static: 정적 메서드
+반환형(void): 메서드가 실행한 후 반환되는 자료의 자료형을 기술
+
+main 메서드:  Java Application 프로그래밍에서 프로그램 실행의 시작점이 되는 메서드
+String[] args: 매개변수: 메서드가 실행될 때 필요한 자료를 받아서 저장하는 변수
+println() 처럼 뒤에 괄호가 나오면 println은 메서드(sum도 같음)
+
+C:\data\java == data.java (=package)
+
+console은 표준 입출력 장치
+System.in.은 입력하는 스트림 키보드로 작성된 데이터를 프로그램이 읽을 수 있도록 제공
+
+기계어(디지털 신호로 구성) -> .class
+실행 (execute)
+Java Virtual Machine(JVM) 자바 가상 머신
+ 
+메모리 : 주기억 장치 (실행할 데이터를 저장(
+SSD, HDD  은 보기억장치
+메모리의 저장 지정 단위: 주소(Address)
+
+변수명: 메모리의 특정 부분에 붙여주는 별칭
+프로그램에서 사용하는 최소 저장단위
+
+변수의 선언
+자료형 변수명;
+자료형 변수명 = 값;
+
+자료형
+boolean(1 byte)
+	: true/false 중 한 가지를 나타내는 자료형
+char(2 byte)
+	: 문자 저장 자료형
+byte(1 byte), short(2 byte) 
+
+int (4byte) : 정수 자료형(정수대표)
+long(8 byte): 정수 자료형
+float(4 byte):  실수 자료형
+double(8 byte): 실수 자료형
+ 
+String 변수명; --> 문자열 처리를 위한 클래스
+
+- 첫 글자는 소문자, snake표기법
+firstData
+
+- 변수명은 개발자 임의로 지정하되 변수에 저장된 자료를 연상시킬 수 있는 이름을 지정하는 것이 좋다.
+
+
+println은 줄바꿈해서 출력
+pirnt는 연결해서 출력 
+
+상수 - 변경할 수 없는 변수
+선언 - final 자료형 변수명 = 값; ( C언어에서 final이 아닌 const)
+
+final int MAX_LENGTH = 250; 상수는 대문자로 명을 지정
+
+int age =24;
+String myAge;
+
+myAge= age + ""; //  무조건 문자열로 만드는 편법 
+
+is working
+
+pirntf는 아예 사용안함 --> 대신 println으로 변경해서 공부할 것
+
+Scanner 클래스를 사용하기 위한 작업
+1.
+	import java.util.*;
+     import java.util.Scanner;
+2. Scanner 클래스형 변수 선언
+Scanner scanner = new Scanner(System.in);
+ 자료형  변수명   값
+
+String input = scanner.next();
+--> String input = scanner.nextLine();
+
+공백문자
+char ch = ' ';
+공백문자열
+String str = "";
+아스키코드(ASCII): 7bit --> 128개
+
+A --> 65
+a --> 97
+
+Unicode --> 모든 문자를 2byte로 저장하자
+
+UTF16(2Byte) --> UTF-8
+
+
+byte(1byte), short(2), int(4), long(8) - 정수형
+
+a=35; --> int로 간주
+b=3.141592; --> 실수는 double로 간주
+
+short a = 55;
+
+char ch = (char)66;  --> down casting(형변환)
+long a = 55; --> up casting
+
+자료의 형변환
+(자료형) --> 형변환 연산자, casting 연산자
+
+// 95페이지까지 함
+
+
