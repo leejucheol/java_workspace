@@ -1,0 +1,7 @@
+public class PersonTest{
+	public static void main (String[] ar) {
+		Person p1 = new Person();
+		Person p2 = new Person(":Lee");
+		Person p3 = new Person("KIM", 30);
+	}
+}

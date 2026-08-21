@@ -1,0 +1,68 @@
+ctr + shift + f --- 정렬
+ctr + shift + o --- import
+ctr + spacebar --- 자동완성
+
+오버로딩
+오버라이딩 (-toString)
+: 상속관계인 클래스에서 조상클래스가 상속해준 메서드를 자손클래스가 임의로 변경하는 기능.
+- 메서드의 선언부는 변경할 수 없고 내용만 변경 가능
+부모에게 받은 메서드를 자식이 자기 방식으로 다시 정의
+
+객체를 문자열로 표현해주는 메서드(toString)
+
+this. <-> super. : 조상클래스의 멤버를 가리키는 포인터
+this.() <-> super() : 조상클래스의 생성자
+
+데이터를 저장하는 표준 규격이 java beans
+--> 기본 생성자 + private 멤버변수 + Getter/Setter
+
+private
+	: 누구에게도 제공하지 않음
+default
+	: 같은 패키지(폴더) 내에서는 접근 가능
+protected
+	: 자손 클래스에게 접근 가능
+public
+	: 누구나 접근 가능
+
+
+어떤 클래스를 통한 인스턴스가 여러개 만들어지는 것을 방지하고자 만든 클래스를 싱글톤 클래스라고 한다.
+// 싱글톤 클래스임 (생성)
+Person p1 = new Person();
+Person p2 = new Person();
+Person p3 = new Person();
+Person p4 = new Person();
+
+
+
+class변수는 속성
+static으로 사용할 경우 변수 1개만 메서드 에리어에서 생성
+heap이 아님
+
+싱글톤 클래스 작업
+1. 생성자의 접근 제어자를 private로 선언
+2. 자기 자신을 인스턴스화 하는 new 작업을 하는 멤버가 선언
+	private static 지정
+3. 인스턴스화 하지 않아도 사용이 가능한 메서드 생성
+	public static 클래스명 메서드명 (){
+		return 참조변수명; 
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

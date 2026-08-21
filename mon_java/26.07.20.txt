@@ -1,0 +1,92 @@
+int a;
+a = 5+3;
+
+!
+&&
+||
+
+결과는 boolean 
+
+toggle
+
+char ch = 'a';
+ch == 'a'; // true
+
+String str = "a";
+str == "a"; (x)
+boolean isAlpha = str.equals("a");
+
+String input = scanner.nextLine()
+ch = input.charAt(0)
+ 
+p.158
+[switch] - char, int, String 조건식 자료형 가능(소수점은 안된다는 의미)
+
+switch(조건식) {
+	case 값1:
+		조건식의 결과가 값1과 같을 경우 실행;
+	case 값2:
+		조건식의 결과가 값1과 같을 경우 실행;
+		break;
+	default:
+		어떤 값에도 해당되지 않을 때 실행;
+}
+	
+p.162
+com = (int) (Math.random() * 3) + 1; // 3의 의미는 0에서 3사이에 렌덤 수
+임의의 수 발생 : 0 >= 임의의 수 < 1 --> 0.2, 0.356, 0.8 나타냄
+
+[반복문]
+for문
+    for (자료형 변수명 = 초기값; 반복조건식; 증감치) {
+	반복되어 실행될 명령문;
+    }
+ex) for (int i=1; i<10; i++) {
+		System.out.println("java");
+	}
+만약 int i=0;으로 선언하면 i는 10으로 출력이됨.
+
+
+for (int i=0; i<3; i++) {
+	for (int J=0; J<4; J++) {
+			System.out.println("java");
+	}
+}
+
+[array]
+int[] num = {1,2,3,4,5,6...};
+
+for (int i=0; i<5; i++) {
+	sum = sum + num[i];
+}
+
+for (int n : num) {
+	sum = sum + n;
+}
+
+
+[while]
+while(조건식) {
+
+}
+
+while (true) { } --> 무한반복
+
+do {
+
+} while(조건식); --> 이 경우만 세미콜론 사용
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

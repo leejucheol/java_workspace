@@ -1,0 +1,84 @@
+Overloading: 하나의 클래스에서 메서드를 선언할 때 메서드에 정의되는 매개변수의  
+개수나 자료형을 다르게 선언하고 메서드의 이름은 동일하게 선언하는 기능.
+()형 안에 형태를 다르게 해야 overloading이 가능함.
+
+class MethodTest01{
+	void method() {}
+	void method(int a) {}
+	void method() {int a, int b}
+	void method() {String a}
+}
+
+System.out.println("KIm"); 
+System.out.println(50);
+System.out.println('a' + 'A');
+
+Constructor
+: 클래스가 인스턴스화 할 때 자동으로 실행도ㅣ는 메서드의 일종.
+생성자의 선언 시 반환형을 기술하지 않는다
+생성자 이름은 클래스명과 같다
+생성자 중 default 생성자는 사용자가 어떤 생성자도 선언하지 않았을 때에는 JVM에서 자동으로 만들어준다. 단, 매개변수를 갖는 생성자를 만들어 준다면 default생성자는 자동으로 생성되지 않는다.
+
+선언
+접근제어자 클래스명() {}
+접근제어자 클래스명(자료형 매개변수형,...) {}
+
+this. -> 인스턴스된 멤버를 가리키는 포인터의 역할
+
+this() -> 생성자 내에서 다른 생성자 호출
+생성자 내 첫 번째 줄에만 기술이 가능
+
+
+상속
+객체지향에서의 상속은 부모의 클래스에도 남고 자손의 클래스에서 사용가능
+--> 복사개념
+
+private 접근제어자가 선언된 자원이나 생성자는 상속되지 않는다
+선언(자손클래스에서 지정)
+public class 클래스명 extends 조상클래스명() 
+
+	- 자바에서 클래스간의 상속은 단일상속만 지원
+		= extends 뒤에 두개이상 못옴 (C++은 됨)
+
+class A {
+	int a;
+	int b;
+}
+
+class B extends A
+	int c;
+}
+
+class C extends A{
+	int d;
+}
+
+A ap = new A();
+ap.a = 50;
+ap.b = 100;
+
+B bp = B();
+bp.a = 150;
+bp.b = 200;
+bp.c = 300;
+
+C cp = new C();
+cp.a = 200;
+cp.b = 250;
+// cp.c = 150; // 이거는 없음!!
+cp.d = 250;
+
+클래스간의 관계는 
+- 상속관계 (is ~ a 관계)
+A는 B이다
+트럭은 자동차다
+학생은 사람이다
+
+- 포함관계 (has ~ a관계)
+A는 B를 가지고 있다
+삼각형은 점을 가지고 있다.
+
+객체배열
+: heap에 만들어진 인스턴스의 주소를 기억하는 배열.
+
+
